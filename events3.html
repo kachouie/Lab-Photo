@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="events3.css" />
+    <title>Events</title>
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8da2ef28f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="nav-container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#coursework">Teaching</a></li>
+            <li><a href="index.html#projects">Research</a></li>
+            <li><a href="publications3.html">Publications</a></li>
+            <li><a href="presentations.html">Presentations</a></li>
+            <li><a href="people4.html">People</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="opportunities.html">Opportunities</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars hamburger" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- ..................................... -->
+    <div id="about">
+      <div class="main-container">
+        <div class="row">
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('2024')">2024</p>
+            <p class="tab-links" onclick="opentab('2023')">2023</p>
+            <p class="tab-links" onclick="opentab('2022')">2022</p>
+            <p class="tab-links" onclick="opentab('2021')">2021</p>
+            <p class="tab-links" onclick="opentab('more')">Activities</p>
+          </div>
+          <!-- ...................................................................................................... -->
+          <div class="tab-contents active-tab" id="2024">
+            <!-- ............................................ -->
+            <div class="event">
+              <h2>REU 2024</h2>
+              <!-- <p>Description of Event............</p> -->
+              <div id="photo-gallery-2024"></div>
+            </div>
+          </div>
+          <!-- ........................................................................................................... -->
+          <div class="tab-contents" id="2023">
+            <!-- ............................................ -->
+            <div class="event">
+              <h2>REU 2023</h2>
+              <!-- <p>Description of Event............</p> -->
+              <div id="photo-gallery-2023"></div>
+            </div>
+          </div>
+          <!-- --------------------------- -->
+          <div class="tab-contents" id="2022">
+            <!-- ............................................ -->
+            <div class="event">
+              <h2>REU 2022</h2>
+              <!-- <p>Description of Event............</p> -->
+              <div id="photo-gallery-2022"></div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------ -->
+          <div class="tab-contents" id="2021">
+            <!-- ............................................ -->
+            <div class="event">
+              <h2>REU 2021</h2>
+              <!-- <p>Description of Event............</p> -->
+              <div id="photo-gallery-2021"></div>
+            </div>
+          </div>
+          <!-- ............ -->
+          <div class="tab-contents" id="more">
+            <!-- ............................................ -->
+            <div class="event">
+              <h2>REU Activities</h2>
+              <!-- <p>Description of Event............</p> -->
+              <div id="photo-gallery-more"></div>
+            </div>
+          </div>
+          <!-- ------- -->
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <!-- <div class="close-wrapper"> -->
+              <span class="close" onclick="closeModal()">&times;</span>
+              <!-- </div> -->
+              <img id="img01" />
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------------ -->
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; All rights reserved | Nezamoddini-Kachouie Nezamoddin -
+        2024
+      </p>
+    </div>
+    <!-- .................................. -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+
+      function openModal(src) {
+        modal.style.display = "flex";
+        modalImg.src = src;
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      const photoGalleries = {
+    '2024': [
+      
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_091751.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_091807.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_093246.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_093247.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_093400.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_094230.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_112525.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_112600.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_112616.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_133844.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_135414.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_151234.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_152832.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_155928.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160044.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160108.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160146.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160156.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160208.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160253.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160306.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160336.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160347.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160449.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160500.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160546.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160704.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160850.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_160953.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_161102.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_161105.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_162159.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_162204(0).jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_162204.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_193836.jpg',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240702_193840.jpg',
+      
+      // Add more photo links for 2024
+    ],
+
+     '2023': [
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0472.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0479.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0482.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0505.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0508.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0521.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0525.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0531.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0548.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0567.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0570.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0574.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0590.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0592.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0594.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0595.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0596.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0599.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0612.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0614.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0619.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0624.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0630.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0644.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0645.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0657.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0660.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0666.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0675.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0699.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0714.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0725.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0733.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0757.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0766.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2023/7K3A0775.jpg',
+       // Add more photo links for 2023
+     ],
+    '2022': [
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/2.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/3.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/4.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/5.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/6.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/7.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/8.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/9.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/10.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/11.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/12.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/13.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/14.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/15.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/16.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/17.jpeg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2022/18.jpeg',
+      // Add more photo links for 2022
+    ],
+    '2021': [
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0116.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0118.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0131.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0145.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0150.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0176.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0178.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0211.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0223.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0225.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0232.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0234.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0235.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0236.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0237.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0238.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0252.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0258.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0263.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0272.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0273.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0277.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0279.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0291.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0295.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/IMG_0300.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/REU2021-13.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/REU2021-14.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/REU2021-4.png',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/REU2021-7.png',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/REU2021-9.jpg',
+      // Add more photo links for 2021
+    ],
+    'more': [
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240613_184655.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240613_184701.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240613_185015.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240625_175358.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/20240625_175410.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/37be829a-821d-49b6-b5e3-f5b5eec7f5b1.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/85cf88a7-600a-44e0-9e04-f3efeca238a2.jpg',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_1619.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_1620.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2606.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2607.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2616.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2620.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2624.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2626.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2628.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2643.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2645.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2647.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2651.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2655.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2672.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2673.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2674.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2675.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2682.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2684.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2685.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2686.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2688.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2689.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2703.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2704.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_2706.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_6268.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_6269.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_6349.JPG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_6562.PNG',
+      'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_6569.JPG',
+      // 'https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2024/IMG_7518.JPG',
+
+    ]
+    
+  };
+
+  Object.keys(photoGalleries).forEach(year => {
+    const gallery = document.getElementById(`photo-gallery-${year}`);
+    photoGalleries[year].forEach(photo => {
+      const img = document.createElement('img');
+      img.src = photo;
+      console.log(photo);
+      img.onerror = () => console.error(`Failed to load image: ${photo}`);
+      img.onclick = () => openModal(photo);
+      gallery.appendChild(img);
+    });
+  });
+    </script>
+  </body>
+</html>

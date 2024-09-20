@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Nezam's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8da2ef28f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#coursework">Teaching</a></li>
+                    <li><a href="#projects">Research</a></li>
+                    <li><a href="publications3.html">Publications</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="people4.html">People</a></li>
+                    <li><a href="events3.html">Events</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars hamburger" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>Nezamoddin N. Kachouie, Ph.D</span></h1>
+                <p>Associate Professor</p>
+                <p>Mathematics and Systems Engineering<br> College of Engineering and Science</p>
+            </div>
+        </div>
+    </div>
+    <!------About Section----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/Aboutme_img.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an Associate Professor in the Department of Mathematical Sciences at Florida Institute of Technology. With degrees in Electrical & Computer Engineering and Systems Design Engineering, I spent four years at Harvard Medical School and Harvard School of Public Health to work in multidisciplinary research environments where I gained successful experience to address interdisciplinary problems in engineering, medicine, and biology. My research interest lies at the interface of statistical modeling, machine learning, pattern recognition, digital signal and image processing, biostatistics, and computer vision with applications to climate change, cancer research, and public health. I have more than 70 peer reviewed journal and conference publications. I served as mentor and adviser for undergraduate and graduate students at Harvard and Florida Tech and have been working with undergraduate and graduate students since joining Florida Tech in 2012. More than 30 undergraduate students have performed research under my supervision and presented their work in annual Northrop Grumman Showcase. I helped with Florida Tech’s Biomath REU site as mentor from 2015 to 2017. Four of my PhD students have successfully completed their dissertation, graduated, and are working in academia. Currently I have four PhD, two Masters, and two undergraduate students who are conducting research under my supervision.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('research')">Research</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Research Fellowship</span> <br>Biostatistics, Harvard School of Public Health, 2012</li>
+                            <li><span>Postdoc  </span><br> Biomedical Engineering, Harvard Medical School, 2010</li>
+                            <li><span>PhD </span><br> Systems Design Engineering, University of Waterloo, 2008</li>
+                            <li><span>MASc </span> <br> Electrical and Computer Engineering</li>
+                            <li><span>BASc  </span><br> Electrical and Computer Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Research Fellow 2010-2012</span><br>Harvard School of Public Health <br>Department of Biostatistics <br> Dana Farber Cancer Institute</li>
+                            <li><span>Postdoctoral Fellow 2008-2010</span><br>Harvard - MIT, Division of Health Sciences and Technology (HST) <br>Harvard Medical School <br>Brigham and Women's Hospital</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="research">
+                        <ul>
+                            <li><span>Research Interest Areas</span><br>Statistical Modeling <br>
+                                Probabilistic Mapping <br>
+                                Pattern Recognition <br>
+                                Machine Learning <br>
+                                Data Science/Analysis <br>
+                                Optimization <br>
+                                Signal/Image/Video Processing</li>
+                            <li><span>Research Application Areas</span><br>Cancer Research <br>
+                                Public Health <br>
+                                Remote Sensing <br>
+                                Climate Change <br>
+                                Ecology </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Coursework -->
+<div id="coursework">
+    <div class="container">
+        <h1 class="sub-title">Teaching</h1>
+        <div class="coursework-list">
+            <div>
+                <h2><i class="fa-solid fa-book"></i> Regression Models for Machine Learning, MTH 5415 </h2>
+                <p>This course describes how to make predictions or inference regarding the problem at
+                    hand using available data. It presents algorithms, techniques, and applications of machine
+                    learning mainly through regression analysis at an advanced level. The main goal of
+                    machine learning is extracting and gaining useful information from data for prediction and
+                    inference. We study two main problem categories addressed in machine learning:
+                    1. Classification,
+                    2. Regression.
+                    The classification problem is to predict what class an instance of data belongs to, while
+                    regression problem is to predict a numeric value of a response variable. Classification
+                    deals with predicting the class label, which is a discrete value, whereas regression deals
+                    with predicting a continuous value for the response to a set of factors.</p>
+                <a target = "_blank" href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files\MTH5415.pdf">Learn More</a>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-book"></i> Applied Statistical Analysis, MTH 5401 </h2>
+                <p>This course will provide students with the principles of multivariate modeling, analysis of
+                    variance (anova), unsupervised learning, and their applications. It builds on the knowledge
+                    of regression modeling to gain a deep understanding of multivariate analysis. This course
+                    will focus on understanding statistical modeling concept, its various applications, and on
+                    interpreting and communicating the results of a multivariate modeling task. Emphasis will be
+                    placed on understanding the problem, identifying dependent and independent variables,
+                    use a multivariate model to explain the problem, estimate the model parameters, and apply
+                    the model for predication and inference. We use R, a multipurpose and comprehensive
+                    programming language that was first developed for statistical analysis.</p>
+                <a target = "_blank" href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files\MTH5401.pdf">Learn More</a>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-book"></i> Mathematical Statistics 1, MTH 5411 </h2>
+                <p>1. Introduce probability theory including random variables, common probability distributions,
+                    joint probability distributions, covariance and correlation, and essential concepts of statistics
+                    including point estimators, confidence intervals, and hypothesis testing.
+                    2. Learn and understand the connection between probability & amp; statistics and other fields.
+                    3. Gain the ability to solve real-world problems using probability theory and statistical methods.</p>
+                <a target = "_blank" href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files/MathematicalStatistics.pdf">Learn More</a>
+            </div>
+            <div>
+                <h2><i class="fa-solid fa-book"></i> Probability and Statistics, MTH 2401 </h2>
+                <p>This course presents techniques and basic results of probability and
+                    statistics at a rigorous level. It describes sampling techniques, measures of central tendency and
+                    dispersion, probabilistic models for and properties of random variables and vectors, common probability
+                    distributions, variance, expectation, correlation, covariance, confidence intervals, hypothesis testing,
+                    estimation theory, prediction for common parametric models, simple linear regression, an introduction
+                    to Bayesian analysis, and reliability.</p>
+                <a target = "_blank" href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files\MTH2401.pdf">Learn More</a>
+            </div>
+            
+        </div>
+        <a target = "_blank" href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files\CourseList.pdf" class="btn">Course List</a>
+    </div>
+</div>
+
+    <!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Research</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/chromosome.png" alt="Project 1 Image">
+                <div class="layer">
+                    <h3>Lung cancer clustering by identification of similarities and discrepancies of DNA</h3>
+                    <p>Lung cancer is the second most diagnosed cancer and the leading cause of cancer-related deaths in the U.S. This research uses maximal information coefficient (MIC) to identify similarities between cancer and blood samples, focusing on high MIC score locations for clustering analysis. Results show that using a subset of high MIC locations improves clustering performance, especially in chromosomes linked to lung cancer.</p>
+                    <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0301131" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/glacier.png" alt="Project 2 Image">
+                <div class="layer">
+                    <h3>Modeling and Analysis of Glacier Variation using Satellite Imagery</h3>
+                    <p>A semi-automated approach for identifying the glacier terminus from Landsat images over time.
+                        IN this study, inflection points are detected along a glacier’s flow path
+                        through multispectral satellite imagery in order to identify candidate terminus locations. A gated tracking
+                        algorithm is then applied to identify the best candidate for the
+                        glacier terminus location through time. </p>
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6871368&tag=1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/mountainglacier.png" alt="Project 3 Image">
+                <div class="layer">
+                    <h3>Multivariate models for predicting glacier termini</h3>
+                    <p>Concerns about mountain glaciers retreating rapidly due to rising global temperatures are increasing. Assessing glacier retreat rates is crucial for understanding climate change impacts and water security. This research proposes a multivariate regression model to estimate glacier changes and predict glacier terminus locations over time based on climate factors. The model, applied to global glacier observations, can help monitor glacier systems.</p>
+                    <a href="https://link.springer.com/article/10.1007/s12665-017-7135-2" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/glac.jpg" alt="Project 4 Image">
+                <div class="layer">
+                    <h3>Supervised Methods for Modeling Spatiotemporal Glacier Variations</h3>
+                    <p>Glaciers are important indictors of climate change as changes in glaciers physical features such as their area is in response to measurable evidence of fluctuating climate factors such as temperature, precipitation, and CO2.</p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdoi.org%2F10.3390%2Fa16100486&data=05%7C02%7Cjastis2023%40my.fit.edu%7C516f2b3634fb4665541608dca81a44f2%7C60d75c77bd344913a57ba2c045419167%7C1%7C0%7C638570077992222007%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=5BzH8Tl2YIle0LkoRZGX5Cu5NulENJUr%2FEY%2BDnZ1brY%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/dna.jpg" alt="Project 5 Image">
+                <div class="layer">
+                    <h3>DNA Copy Number Changes in Cancer and Matched Blood </h3>
+                    <p>Non-small cell lung cancer (NSCLC) is the first cause of cancer-related mortality for men and women in the United States. In spite of curative resection in early-stage, patient survival is not optimal and recurrence rate is high. Consequently, early detection and staging is essential to increase the patient’s survival.</p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.tandfonline.com%2Fdoi%2Ffull%2F10.1080%2F07357907.2019.1667368&data=05%7C02%7Cjastis2023%40my.fit.edu%7C1a3570163e4f493f233008dca81b1fe9%7C60d75c77bd344913a57ba2c045419167%7C1%7C0%7C638570081653626827%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=B3YmYqvHiHDj75zRkmGCGEgPuR3LRu7s9Ef0JgaB%2FHM%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square" ></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/kmeans.jpg" alt="Project 6 Image">
+                <div class="layer">
+                    <h3>Silhouette Analysis for Performance Evaluation in Machine Learning</h3>
+                    <p>Grouping the objects based on their similarities is an important common task in machine learning applications.
+                        Kernel k-means projects the elements to a higher dimensional feature space using a kernel function, and then groups them. Different kernel functions may not perform similarly in clustering of a data set and, in turn, choosing the right kernel for an application could be challenging.</p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdoi.org%2F10.3390%2Fe23060759&data=05%7C02%7Cjastis2023%40my.fit.edu%7C93c8707599fc41efdb4f08dca81c0a23%7C60d75c77bd344913a57ba2c045419167%7C1%7C0%7C638570085595062700%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=GEK6m7F7tRG0yOcNVHEmgktUZ4UUOIezfCekYNnveBI%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/ipcc.png" alt="Project 7 Image">
+                <div class="layer">
+                    <h3>Generalized Additive Models for Predicting Sea Level Rise in Coastal Florida</h3>
+                    <p> Projections from the Intergovernmental Panel on Climate Change (IPCC) show the global mean sea level (GMSL) rise may increase to up to 1 m (1000 mm) by 2100. The primary cause of the sea level rise can be attributed to climate change through the thermal expansion of seawater and the recession of glaciers from melting. Because of the complexity of the climate and environmental systems, it is very difficult to accurately predict the increase in sea level.</p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.mdpi.com%2F2076-3263%2F13%2F10%2F310&data=05%7C02%7Cjastis2023%40my.fit.edu%7Cf21c182296a6447a321508dcafeef752%7C60d75c77bd344913a57ba2c045419167%7C0%7C0%7C638578688105779203%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=tTqKAmeTi9FnFs6anPpP06vbPKchPwjWTQgkUfQZ1SQ%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/geospatial_ml.png" alt="Project 8 Image">
+                <div class="layer">
+                    <h3>Multi-Source Data Fusion and Integration for Hazard Model Validation using Geospatial Information System</h3>
+                    <p>Due to the increasing effects of global climate change, the incidence and associated cost of disasters such as hurricanes are increasing. Hence, it is vital to develop integrated datasets and technologies to support and improve disaster response and predictions. </p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fams.confex.com%2Fams%2F104ANNUAL%2Fmeetingapp.cgi%2FPaper%2F432286&data=05%7C02%7Cjastis2023%40my.fit.edu%7Cf21c182296a6447a321508dcafeef752%7C60d75c77bd344913a57ba2c045419167%7C0%7C0%7C638578688105779203%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=MrKqjGBNp%2FELzNhsh%2F416KYkRfbfB%2F7ieNnVOsMgBjo%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Publications/docks.png" alt="Project 9 Image">
+                <div class="layer">
+                    <h3>The Impact of Benthic Organisms to Improve Water Quality in the Indian River Lagoon, Florida</h3>
+                    <p>The Living Docks restoration program was implemented in the Indian River Lagoon (IRL), Florida, with the goal of affixing oyster restoration mats to dock pilings to promote the growth of filter feeding benthic organisms which can help improve local water quality. This study investigates the presence of benthic organisms on eight Living Docks which were deployed throughout the central part of the IRL. </p>
+                    <a href="https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11270-023-06528-w&data=05%7C02%7Cjastis2023%40my.fit.edu%7Cb9041a8f0b8c4f31fe2708dcaff0205b%7C60d75c77bd344913a57ba2c045419167%7C0%7C0%7C638578693088225700%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=S5mVSchEFGprE4N9QJY5G6D7j3a1WZdAzh9psdQNTWA%3D&reserved=0" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://scholar.google.com/citations?user=ghxCwaAeRhoC&hl=en" target="_blank" class="btn">See More</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> nezamoddin@fit.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> 3216104315</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nezamoddin-n-kachouie-27012739/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/kachouie"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.facebook.com/nezam.kachouie"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                </div>
+                <a href="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/Files\CV-Nezamoddin N.Kachouie-2024.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Affiliation" placeholder="Your Institution/Affiliation" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; All rights reserved | Nezamoddini-Kachouie Nezamoddin - 2024</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiG4EHQt6olNIn3UJ2xW9YBnQCGcC0M3EA-E9AMuRZb9ykyryKTw121rrHfoRew1Evsg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks for reaching out, I will get back shortly!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

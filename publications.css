@@ -1,0 +1,323 @@
+* {
+  background-color: #080808;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.card {
+  position: relative;
+  /* Make sure the card is the relative container */
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 #1713fb;
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 300px;
+  height: 314px;
+  /* adjust this value as needed */
+  object-fit: cover;
+  /* this will ensure that the aspect ratio of the image is maintained */
+  border-radius: 5px 5px 0 0;
+}
+
+.card-title {
+  padding: 15px 2px;
+  text-align: center;
+  background-color: #d01b1b;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* Use absolute positioning */
+  top: 100%;
+  /* Position it below the card */
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  /* Ensure it has a background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: add a shadow for better visibility */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #080808;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.pubs-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pub-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #080808;
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0px 2px 15px #ad966d;
+  margin: 23px 0;
+}
+
+.pub-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  background: #080808;
+}
+.pub-card img {
+  width: 300px;
+  height: 314px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+h1 {
+  margin-top: 111px;
+  margin-left: 30px;
+}
+.pub-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  background: #080808;
+}
+
+.pub-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: #080808;
+  width: 100%;
+  border-radius: 10px;
+  padding: 4px 8px;
+}
+
+.pub-link a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.pub-link:hover {
+  color: #ad966d; /* Change the background color on hover */
+  cursor: pointer;
+  transform: scaleX(1.01);
+}
+
+.pub-link:hover a {
+  color: #ad966d; /* Change the text color on hover */
+}
+
+.pub-link:hover .fa-magnifying-glass {
+  color: #ad966d; /* Change the icon color on hover */
+}
+
+.pub-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #080808;
+}
+.logo {
+  height: 100px;
+  width: 200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background: #080808; */
+  color: #fff;
+}
+.logo {
+  height: 100px;
+  width: 200px;
+}
+.container {
+  padding: 10px 10%;
+}
+.heading-pub {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 115px;
+}
+nav {
+  width: 80%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px #ad966d;
+  z-index: 999;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure the ul takes full width */
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  flex-grow: 1;
+  align-items: center;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ad966d;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ad966d;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #ad966d;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #ad966d;
+  font-weight: 300;
+  margin-top: 20px;
+  color: #fff;
+}
+.copyright p {
+  color: #fff;
+  background-color: #ad966d;
+}
+/* css small screen */
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    margin-right: 8px;
+  }
+  nav ul {
+    background: #ad966d;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-left: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background: #ad966d;
+  }
+  .hamburger {
+    position: absolute;
+    right: 8px;
+  }
+  nav .fas {
+    color: white;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    background-color: #ad966d;
+    color: #fff;
+  }
+  nav ul li a {
+    background-color: #ad966d;
+  }
+  /* .sub-title{
+    font-size: 40px;
+}
+.about-col-1, .about-col-2{
+    flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-left, .contact-right{
+    flex-basis: 100%;
+} */
+  .copyright {
+    font-size: 14px;
+  }
+}

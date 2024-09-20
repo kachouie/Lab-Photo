@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="people4.css" />
+    <title>People</title>
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8da2ef28f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="nav-container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="index.html#header">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#coursework">Teaching</a></li>
+            <li><a href="index.html#projects">Research</a></li>
+            <li><a href="publications3.html">Publications</a></li>
+            <li><a href="presentations.html">Presentations</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="events3.html">Events</a></li>
+            <li><a href="opportunities.html">Opportunities</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- ..................................... -->
+    <div id="about">
+      <div class="main-container">
+        <div class="row">
+          <div class="tab-titles">
+            <p
+              class="tab-links active-link"
+              onclick="opentab('graduatestudents')"
+            >
+              Graduate Students
+            </p>
+            <p class="tab-links" onclick="opentab('undergraduatestudents')">
+              Undergraduate Students
+            </p>
+            <p class="tab-links" onclick="opentab('reustudents')">
+              REU Students
+            </p>
+            <p class="tab-links" onclick="opentab('postdocs')">Postdoctoral Researchers</p>
+            <p class="tab-links" onclick="opentab('collaborators')">
+              Collaborators
+            </p>
+            <p class="tab-links" onclick="opentab('alumni')">Alumni</p>
+            <p class="tab-links" onclick="opentab('companions')">Companions</p>
+          </div>
+          <!-- ...................................................................................................... -->
+          <div class="tab-contents active-tab" id="graduatestudents">
+            <!-- ............................................ -->
+            <section class="team">
+              <div class="contain">
+                <!-- <div class="section-title">
+                  
+                </div> -->
+                <div class="row">
+                  <!-- First Student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Alain_Despeignes.jpg"
+                          class="img-fluid"
+                          alt="Member4"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Alain Despeignes</h4>
+                        <span>PhD Student</span>
+                        <p>
+                          Like meeting new people and taking on new adventures.
+                        </p>
+                        <div class="social">
+                          <a href=""><i class="bi bi-envelope-at"></i></a>
+                          <a href=""><i class="bi bi-telephone"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Robbie_Breininger.jpeg"
+                          class="img-fluid"
+                          alt="Member1"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Robbie Breininger</h4>
+                        <span>PhD Student</span>
+                        <p class="description">
+                          I am an Operations Research PhD student. My interests are in machine learning, deep learning, Bayesian inference, wildlife ecology, and environmental science. I have experience in data science and analysis, particular with respect to machine learning in ecology and environmental science.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:rbreininger2015@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href=""><i class="bi bi-telephone"></i></a>
+                          <a href="http://linkedin.com/in/robbie-breininger-528958117"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Second Student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Daniel_Breininger.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Daniel Breininger</h4>
+                        <span>PhD Student</span>
+                        <p>
+                          I am an Operations Research PhD student modeling wildfires in California, and lung cancer survival. I received my bachelors degree in Biomathematics here at Florida Tech, and I am interested in applying statistical modeling techniques for ecological/environmental applications.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:dbreininger2016@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href=""><i class="bi bi-telephone"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fourth student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Dianeliz_Ortiz_Martes.jpg"
+                          class="img-fluid"
+                          alt="Member4"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Dianeliz Ortiz Martes</h4>
+                        <span>PhD Student</span>
+                        <p>
+                          Dianeliz Ortiz Martes is a Latina student from Puerto Rico with a bachelor’s degree in industrial and management engineering. She is currently pursuing a PhD in Operations Research. Dianeliz brings a wealth of experience, having worked as an Operational Excellence Engineer, conducted research in statistics, and taught mathematics. Her diverse background spans national laboratories and the medical devices, beverage, aerospace, and transportation industries. 
+                        </p>
+                        <div class="social">
+                          <a href=""><i class="bi bi-envelope-at"></i></a>
+                          <a href=""><i class="bi bi-telephone"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Third student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Thu_Thu_Hlaing.jpg"
+                          class="img-fluid"
+                          alt="Member3"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Thu Thu Hlaing</h4>
+                        <span>PhD Student</span>
+                        <p>
+                          I am a PhD student in Operations Research at the Florida Institute of Technology researching the application of artificial intelligence to oncological studies under the guidance of Dr. Kachouie. I received a B.S. in Mathematics from Ithaca College, where I participated in a Research Experiences for Undergraduates (REU) program at Florida Tech during my junior year. This experience influenced my decision to also pursue graduate studies at Florida Tech. My current research interests include statistical modeling, data science, and machine learning.
+                        </p>
+                        <div class="social">
+                          <a href=""><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+17188666897"><i class="bi bi-telephone"></i></a>
+                          <a href=""><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fourth student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Mary_Helforoush.jpg"
+                          class="img-fluid"
+                          alt="Member4"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Mary Helforoush</h4>
+                        <span>PhD Student</span>
+                        <p>
+                          She is presently a Ph.D. candidate in the Mathematics and Systems Engineering Department at the Florida Institute of Technology. She has been a part of FIT’s Research Experience for Undergraduates (REU) program since 2023, and it has greatly enhanced her knowledge and abilities in research. Her work has focused on applying different machine learningand deep learning approaches to identify the best solutions in a variety of sectors, such as transportation, environmental science, natural language processing, and medical applications.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:zhelforoush2022@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+13213899773"><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/zarindokht-helforoush-469366225/"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ................. -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Sathvik_Jasti.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Sathvik Jasti</h4>
+                        <span>Graduate Student</span>
+                        <p>
+                          I am a graduate student pursuing a CIS degree. With a prior background in artificial intelligence, I am passionate about exploring emerging AI technologies and aspire to develop my own AI tool. Fun fact: I am the developer of this website.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:jastis2023@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href=""><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/sathvikjasti/"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ............................................ -->
+          </div>
+          <!-- ---------------------------------------------------------------------------------------------------------------- -->
+          <div class="tab-contents" id="undergraduatestudents">
+            <!-- ............................................ -->
+            <section class="team">
+              <div class="contain">
+                <div class="section-title">
+                  <!-- <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium corporis quaerat cumque, beatae reiciendis minus
+                    ad assumenda aliquam enim soluta, recusandae deserunt.
+                    Mollitia, incidunt similique cumque vitae corporis
+                    consectetur ex ducimus ipsam recusandae porro culpa!
+                  </p> -->
+                </div>
+                <div class="row">
+                 
+                  <!-- Second Student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Audrey_Eley.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Audrey Eley</h4>
+                        <span>Undergraduate Student</span>
+                        <p>
+                          I am a rising senior at Florida Tech studying for a bachelor's in Software Engineering. I am originally from Melbourne Florida. 
+                        </p>
+                        <div class="social">
+                          <a href="mailto:aeley2020@my.fit.edu "><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+13215768016"><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/Audrey Eley/"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://github.com/aeley320"><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Third student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Emmy_Stevens.JPG"
+                          class="img-fluid"
+                          alt="Member4"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Emmy Stevens</h4>
+                        <span>Undergraduate Student</span>
+                        <p>
+                          Emmy is currently pursuing a bachelor's degree in Mechanical Engineering and will be graduating in Spring of 2025.  She has been accepted to fast track her Master’s Degree in Mechanical Engineering and will graduate with her Master’s Degree in Spring of 2026. She hopes to work in the theme park industry as an engineer and designer in the future.When she isn't doing school work or research, she enjoys running, going to Disney, and competes in Ninja Warrior competitions!
+                        </p>
+                        <div class="social">
+                          <a href="mailto:estevens2022@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+13363145052"><i class="bi bi-telephone"></i></a>
+                          <a href="www.linkedin.com/in/emilystevens14"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <!-- Second Student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Edger.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Evan Gunderson</h4>
+                        <span>Undergraduate Student</span>
+                        <p>
+                          Computer Science BS working on integrated conversational AI. Interested in neural networks, developing software, particle physics, and learning.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:egunderson2022@my.fit.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+16304786068"><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/egunderson2004/"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://github.com/lizard25"><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ............................................ -->
+          </div>
+          <!-- ------------------------------------------------------------------------------------------------- -->
+          <div class="tab-contents" id="reustudents">
+            <!-- ............................................ -->
+            <section class="team">
+              <div class="contain">
+                <div class="section-title">
+                  <!-- <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium corporis quaerat cumque, beatae reiciendis minus
+                    ad assumenda aliquam enim soluta, recusandae deserunt.
+                    Mollitia, incidunt similique cumque vitae corporis
+                    consectetur ex ducimus ipsam recusandae porro culpa!
+                  </p> -->
+                </div>
+                <div class="row">
+                  
+                  <!-- First Student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Gwen_Squires.JPG"
+                          class="img-fluid"
+                          alt="Member1"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Gwen Squires</h4>
+                        <span>REU Student</span>
+                        <p>
+                          I am studying Mathematics - Actuarial Science with minors in Data Science and Finance at Southeast Missouri State University in Cape Girardeau, MO. I am interested in mathematics, statistics, and data science, and I have lengthy experience working with R and Microsoft Excel. I am considering pursuing a graduate degree in statistics, and I plan to establish a career in the actuarial field. 
+                        </p>
+                        <div class="social">
+                          <a href="mailto:gwsquires99@gmail.com"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+12178912178"><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/gwen-squires/"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Third student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Jesu_Munoz.jpg"
+                          class="img-fluid"
+                          alt="Member3"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Jesu Munoz</h4>
+                        <span>REU Student</span>
+                        <p>
+                          I am a bilingual Mechanical Engineering student set to graduate in December 2025. Currently, I contribute my knowledge and skills as a Mechanical Design & Project Research Engineer at NASA's L'SPACE Mission Concept Academy. With advanced proficiency in design tools such as Creo Parametric and Siemens NX, I have participated in high-level, complex projects.
+                        </p>
+                        <div class="social">
+                          <a href="mailto:munozm2023@my.fit.edu "><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+18638453737"><i class="bi bi-telephone"></i></a>
+                          <a href="linkedin.com/in/maria-jesus-munoz-b48a512a3"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fourth student  -->
+                  
+                  <!-- Fifth student  -->
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Joy_Gao.jpg"
+                          class="img-fluid"
+                          alt="Member5"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Joy Gao</h4>
+                        <span>REU Student</span>
+                        <p>
+                          I am currently a Junior at Purdue University studying Data Science, Applied Statistics, and with minors in Economics and Management. I am a driven undergraduate student with a keen interest in data analytics fields, including quantitative analysis. At the SMAG REU, I am on a project using deep learning techniques to map the perimeter of glaciers to measure the area of glaciers in response to climate change. 
+                        </p>
+                        <div class="social">
+                          <a href="mailto:gao670@purdue.edu"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+16574458978"><i class="bi bi-telephone"></i></a>
+                          <a href="https://www.linkedin.com/in/joy-gao-0b98452bb/"><i class="bi bi-linkedin"></i></a>
+                          <a href="https://github.com/joygao22"><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Tim_Wainscott.jpg"
+                          class="img-fluid"
+                          alt="Member1"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Tim Wainscott</h4>
+                        <span>REU Student</span>
+                        <p>
+                          I am a undergraduate senior double majoring in Astronomy & Astrophysics and Planetary Science and minoring in Computational Mathematics. My current career goal is to model the atmospheres of exoplanets through the use of global circulation models. Outside of academics, I am the Vice President of the Florida Tech Chess Club and an Eagle Scout since May 2021. I look forward to helping expand the knowledge of planets through my work and am always on the search for learning, experiencing, and using fascinating topics in life and in college. 
+                        </p>
+                        <div class="social">
+                          <a href="mailto:timothywainscott@gmail.com"><i class="bi bi-envelope-at"></i></a>
+                          <a href="tel:+19737270013"><i class="bi bi-telephone"></i></a>
+                          <a href="www.linkedin.com/in/timothy-wainscott-3a184a235"><i class="bi bi-linkedin"></i></a>
+                          <a href=""><i class="bi bi-github"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ............................................ -->
+          </div>
+          <!-- ........................................................................................................... -->
+           <!-- ---------------------------------------------------------------------------------------------------------------- -->
+          <div class="tab-contents" id="companions">
+            <!-- ............................................ -->
+            <section class="team">
+              <div class="contain">
+                <div class="section-title">
+                  <!-- <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium corporis quaerat cumque, beatae reiciendis minus
+                    ad assumenda aliquam enim soluta, recusandae deserunt.
+                    Mollitia, incidunt similique cumque vitae corporis
+                    consectetur ex ducimus ipsam recusandae porro culpa!
+                  </p> -->
+                </div>
+                <div class="row">
+                  
+                  <!-- Second Student  -->
+                  <div class="col-lg-4 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Compianions/Mike.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Mike</h4>
+                        <span>Dianeliz's Cat</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Compianions/Lily.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Lilly</h4>
+                        <span>Robbie's & Daniel's Dog</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Compianions/Carly.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Carly</h4>
+                        <span>Robbie's & Daniel's Cat</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-4">
+                    <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                        <img
+                          src="https://raw.githubusercontent.com/kachouie/Lab-Photo/main/People/Compianions/Rosie.jpg"
+                          class="img-fluid"
+                          alt="Member2"
+                        />
+                      </div>
+                      <div class="member-info">
+                        <h4>Rosie</h4>
+                        <span>Robbie's & Daniel's Cat</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ............................................ -->
+          </div>
+          
+                </div>
+              </div>
+            </section>
+            <!-- ............................................ -->
+          </div>
+          <!-- ................................................................................................................. -->
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &copy; All rights reserved | Nezamoddini-Kachouie Nezamoddin -
+        2024
+      </p>
+    </div>
+    <!-- .................................. -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+    
+      function opentab(tabname) {
+        // Remove 'active-link' class from all tab links
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
+        }
+        // Remove 'active-tab' class from all tab contents
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove("active-tab");
+        }
+        // Add 'active-link' class to the clicked tab link
+        event.currentTarget.classList.add("active-link");
+        // Add 'active-tab' class to the corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+  </body>
+</html>
