@@ -1,182 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    /* color: #fff; */
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background: #080808 !important;
-    color: #fff;
-  }
-  
-  #header {
-    width: 100%;
-    height: 15vh;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-  }
-  .logo {
-    height: 100px;
-    width: 200px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #080808 !important;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 15vh; /* Aligns content just below navbar */
+}
+
+.opportunities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 40px; /* Space between position boxes and footer */
+}
+
+.opportunities-list .position {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #ad966d;
+  color: #fff;
+}
+
+.opportunities-list .position h2 {
+  color: #ad966d;
+}
+
+.opportunities-list .position .apply-link {
+  color: #ad966d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.opportunities-list .position .apply-link:hover {
+  text-decoration: underline;
+}
+
+.status {
+  color: #ad966d;
+}
+
+nav {
+  width: 80%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px #ad966d;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ad966d;
+}
+
+.hamburger {
+  display: none; /* Hidden by default for desktop */
+  font-size: 25px;
+  color: #ffffff; /* Ensure it is white */
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.close {
+  display: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Move close icon to top right */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #ad966d;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Align main container width with navbar width on mobile */
   .main-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    width: 80%; /* Match navbar width */
+    padding-top: 20vh; /* Adjusted padding for mobile */
+    margin: 0 auto; /* Center-align main content */
   }
-  nav {
-    width: 80%;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    position: fixed;
-    top: 0;
-    background: rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 0px 2px 15px #ad966d;
-    z-index: 999;
+
+  /* Make the opportunities list stack vertically */
+  .opportunities-list {
+    grid-template-columns: 1fr;
+    width: 100%; /* Match navbar and container width */
+    margin-bottom: 40px; /* Ensures space before footer */
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%; /* Ensure the ul takes full width */
+
+  .opportunities-list .position {
+    padding: 15px;
+    width: 100%; /* Ensure full-width alignment within container */
   }
-  .nav-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    flex-grow: 1;
-    align-items: center;
-  }
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  nav ul li a:hover {
-    color: #fff;
-  }
-  nav ul li a::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #ad966d;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  .coming-soon {
-    text-align: center;
-    /* margin-top: 10%; */
-  }
-  .coming-soon h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  .coming-soon p {
+
+  .opportunities-list .position h2 {
     font-size: 20px;
   }
-  .copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #ad966d;
-    font-weight: 300;
-    margin-top: 20px;
-    position: relative;
-    left: 0;
-    bottom: 0;
+
+  /* Hamburger Menu for Mobile */
+  .hamburger {
+    display: block; /* Show hamburger icon */
     color: #fff;
   }
-  nav .fas {
-    display: none;
+
+  /* Style the navigation menu for mobile */
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Start off-screen */
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    transition: right 0.5s;
+    overflow-y: auto;
+    background: #080808;
+    padding-top: 60px; /* Space for close icon */
+    z-index: 999;
   }
-  @media only screen and (max-width: 768px) {
-    nav .fas {
-      display: block;
-      font-size: 25px;
-      margin-right: 8px;
-    }
-    nav ul {
-      background: #ad966d;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      padding-top: 50px;
-      z-index: 2;
-      transition: right 0.5s;
-      flex-direction: column;
-      overflow-y: auto;
-      padding-left: 0;
-    }
-    nav ul li {
-      display: block;
-      margin: 25px;
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
-    .hamburger {
-      position: absolute;
-      right: 8px;
-    }
-    nav .fas {
-      color: white;
-    }
-    nav ul .fas {
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
-      color: #fff;
-    }
-    .sub-title {
-      font-size: 40px;
-    }
-    .about-col-1,
-    .about-col-2 {
-      flex-basis: 100%;
-    }
-    .about-col-1 {
-      margin-bottom: 30px;
-    }
-    .about-col-2 {
-      font-size: 14px;
-    }
-    .tab-links {
-      font-size: 16px;
-      margin-right: 20px;
-    }
-    .contact-left,
-    .contact-right {
-      flex-basis: 100%;
-    }
-    .copyright {
-      font-size: 14px;
-    }
+
+  /* "X" close icon in mobile view */
+  .close {
+    display: block; /* Show close icon */
   }
-  
+
+  nav ul li {
+    margin: 25px;
+  }
+
+  .hamburger.active {
+    display: none; /* Hide hamburger icon when menu is active */
+  }
+
+  nav ul.active {
+    right: 0; /* Slide menu into view when active */
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

@@ -12,7 +12,7 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
+/* #header{
     width: 100%;
     height: 100vh;
     background-image: url(https://raw.githubusercontent.com/kachouie/Lab-Photo/main/2021/bg2.jpg);
@@ -21,14 +21,33 @@ body{
     background-size: auto 100vh;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
-/* .logo{
-    height: 100px;
-    width: 200px;
 } */
-.container{
-    padding: 10px 10%;
+
+#header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #080808; /* Background color for the header */
 }
+
+
+/* .container{
+    padding: 10px 10%;
+} */
+
+.container {
+    padding: 10px 10%;
+    width: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 nav{
     width: 80%;
     min-height: 60px;
@@ -74,14 +93,42 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
+/* .header-text{
     margin-top: 25%;
-    font-size: 30px;
+    font-size: 25px;
+} */
+.header-text {
+    width: 45%; /* Make the text container take 45% of the width */
+    font-size: 25px;
+    /* color: #ad966d; */
 }
-.header-text h1{
+.header-text h1 span {
+    color: #ad966d; /* Color for the span within h1 */
+}
+
+.header-text p {
+    color: #fff; /* Color for all paragraphs */
+}
+/* .header-text h1{
     font-size: 45px;
     margin-top: 23px;
-    /* color: rgb(137, 137, 137); */
+} */
+
+.header-text h1 {
+    font-size: 2.5vw; /* Responsive font size */
+    margin-top: 2vh;
+    white-space: nowrap;
+}
+
+.header-image {
+    width: 50%; /* Make the image container take 50% of the width */
+    margin-top: 5%;
+}
+.header-image img {
+    width: 100%;
+    max-height: 80vh; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
 }
 .header-text h1 span{
     color: #ad966d;
@@ -374,15 +421,48 @@ nav .fas{
 
 
 @media only screen and (max-width: 768px){
-    #header{
-        background-image: url(images/phoneimg.jpg);
+    .header-image {
+        display: none;
     }
-    .header-text{
-        margin-top: 40%;
-        font-size: 29px;
+
+    /* Center and adjust the text */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center; /* Center-align text */
+        width: 80%;
+        margin: 0 auto;
     }
-    .header-text h1{
-        font-size: 38px;
+
+    .header-text {
+        margin-top: 15vh; /* Increase top margin for better spacing */
+        width: 100%; /* Adjust font size */
+    }
+
+    .header-text h1 {
+        font-size: 5vw; /* Larger font size for mobile screens */
+        color: #ad966d; /* Ensure color consistency */
+        margin-bottom: 1vh;
+        white-space: normal; /* Prevent line break */
+    }
+
+    .header-text p {
+        font-size: 4vw; /* Increase paragraph font size for readability */
+        color: #fff; /* Ensure paragraphs remain white */
+        line-height: 1.5; /* Improve line spacing for readability */
+        margin: 0.5vh 0;
+    }
+    .header-text p:nth-of-type(1) {
+        font-size: 3vw; /* Line for "Associate Professor" */
+    }
+
+    .header-text p:nth-of-type(2) {
+        font-size: 3vw; /* Line for "Mathematics and Systems Engineering" */
+    }
+
+    .header-text p:nth-of-type(3) {
+        font-size: 3vw; /* Line for "College of Engineering and Science" */
     }
     nav .fas{
         display: block;
