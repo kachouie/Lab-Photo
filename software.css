@@ -9,9 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: #080808;
+    background-color: #080808;
     color: #fff;
 }
+
 
 /* Header and navigation */
 #header {
