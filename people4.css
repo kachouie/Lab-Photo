@@ -65,9 +65,9 @@ nav::before {
   bottom: -10px;
   border-radius: inherit;
   background: linear-gradient(45deg, #ff3131, #fff85e, #bdff5d, #00d0ff);
-  z-index: -1;
   filter: blur(20px); /* makes it look like a shadow */
   opacity: 0.8;
+  z-index: 1;
 }
 nav ul {
   display: flex;
