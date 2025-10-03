@@ -50,7 +50,7 @@ nav {
   z-index: 999;
   overflow: visible; /* ensure pseudo-element shows outside */
 }
-
+/*
 nav::before {
   content: "";
   position: absolute;
@@ -60,10 +60,11 @@ nav::before {
   bottom: -10px;
   border-radius: inherit;
   background: linear-gradient(45deg, #ff3131, #fff85e, #bdff5d, #00d0ff);
-  filter: blur(20px); /* makes it look like a shadow */
+  filter: blur(20px); 
   opacity: 0.8;
   z-index: -1;
 }
+  */
 
 nav ul {
     display: flex;
