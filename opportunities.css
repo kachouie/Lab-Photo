@@ -57,6 +57,7 @@ body {
 }
 
 .opportunities-list .position .apply-link:hover {
+  color: #bdff5d;
   text-decoration: underline;
 }
 
@@ -64,37 +65,39 @@ body {
   color: #ad966d;
 }
 
-nav {
-  width: 80%;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  background: rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 0px 2px 15px #ad966d;
-  z-index: 999;
+nav{
+    width: 80%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px #ad966d;
+    z-index: 999;
 }
+
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; /* Ensure the ul takes full width */
 }
-
-.nav-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    flex-grow: 1;
+    text-align: center;
 }
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
 }
 
 nav ul li a:hover{
@@ -102,18 +105,20 @@ nav ul li a:hover{
   text-decoration: none;
 }
 
-.hamburger {
-  display: none; /* Hidden by default for desktop */
-  font-size: 25px;
-  color: #ffffff; /* Ensure it is white */
-  position: absolute;
-  right: 8px;
-  cursor: pointer;
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ad966d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
 }
 
-nav ul li {
-  list-style: none;
-}
 
 .close {
   display: none;
