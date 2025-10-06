@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 15vh; /* Aligns content just below navbar */
+  padding-top: 20vh; /* Aligns content just below navbar */
 }
 
 .opportunities-list {
@@ -73,10 +73,12 @@ nav{
     justify-content: space-between;
     position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgb(0, 0, 0);
     border-radius: 10px;
     box-shadow: 0px 2px 15px #ad966d;
-    z-index: 999;
+    z-index: 9999;
 }
 
 
@@ -164,12 +166,6 @@ nav ul li a:hover::after{
 
   .opportunities-list .position h2 {
     font-size: 20px;
-  }
-
-  /* Hamburger Menu for Mobile */
-  .hamburger {
-    display: block; /* Show hamburger icon */
-    color: #fff;
   }
 
   /* Style the navigation menu for mobile */
