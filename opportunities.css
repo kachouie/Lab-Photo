@@ -97,8 +97,9 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav ul li a:hover {
-  color: #ad966d;
+nav ul li a:hover{
+  color: #bdff5d;
+  text-decoration: none;
 }
 
 .hamburger {

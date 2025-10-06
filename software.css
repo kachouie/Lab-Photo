@@ -63,6 +63,12 @@ nav ul li a {
     font-size: 18px;
     position: relative;
 }
+
+nav ul li a:hover{
+  color: #bdff5d;
+  text-decoration: none;
+}
+
 nav ul li a::after {
     content: '';
     width: 0;

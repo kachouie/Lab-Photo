@@ -82,6 +82,12 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+
+nav ul li a:hover{
+  color: #bdff5d;
+  text-decoration: none;
+}
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -277,7 +283,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ad966d);
+    background: linear-gradient(#ff3131, #fff85e, #bdff5d, #00d0ff, #fff, #fff);
     border-radius: 10px;
     position: absolute;
     left: 0;

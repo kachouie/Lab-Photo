@@ -69,7 +69,8 @@ nav ul li a {
   position: relative;
 }
 nav ul li a:hover{
-  color: #fff;
+  color: #bdff5d;
+  text-decoration: none;
 }
 nav ul li a::after {
   content: "";
