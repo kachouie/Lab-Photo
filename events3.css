@@ -39,10 +39,10 @@ nav {
   background: rgb(0, 0, 0);
   border-radius: 10px;
   z-index: 999;
-  filter: drop-shadow(0 0 6px #ff3131)
+  filter: drop-shadow(0 0 8px #ff3131)
           drop-shadow(0 0 9px #fff85e)
-          drop-shadow(0 0 12px #bdff5d)
-          drop-shadow(0 0 15px #00d0ff);
+          drop-shadow(0 0 10px #bdff5d)
+          drop-shadow(0 0 11px #00d0ff);
 }
 
 nav ul {
@@ -81,7 +81,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ad966d;
+  background-image: linear-gradient(to right, #ff3131, #fff85e, #bdff5d, #00d0ff);
   position: absolute;
   left: 0;
   bottom: -6px;
