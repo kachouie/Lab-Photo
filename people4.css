@@ -39,10 +39,10 @@ nav {
   background: rgb(0, 0, 0);
   border-radius: 10px;
   z-index: 999;
-  filter: drop-shadow(0 0 5px #ff3131)
-          drop-shadow(0 0 10px #fff85e)
-          drop-shadow(0 0 15px #bdff5d)
-          drop-shadow(0 0 20px #00d0ff);
+ filter: drop-shadow(0 0 6px #ff3131)
+          drop-shadow(0 0 9px #fff85e)
+          drop-shadow(0 0 12px #bdff5d)
+          drop-shadow(0 0 15px #00d0ff);
 }
 
 nav ul {
