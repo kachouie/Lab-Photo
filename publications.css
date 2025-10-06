@@ -189,10 +189,10 @@ nav{
     background: rgb(0, 0, 0);
     border-radius: 10px !important;
     z-index: 999;
-    filter: drop-shadow(0 0 20px #ff3131)
-          drop-shadow(0 0 40px #fff85e)
-          drop-shadow(0 0 60px #bdff5d)
-          drop-shadow(0 0 80px #00d0ff);
+    filter: drop-shadow(0 0 5px #ff3131)
+          drop-shadow(0 0 10px #fff85e)
+          drop-shadow(0 0 15px #bdff5d)
+          drop-shadow(0 0 20px #00d0ff);
 }
 
 
