@@ -178,18 +178,18 @@ body {
   padding-top: 115px;
 }
 
-nav {
-  width: 80%;
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  background: rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 0px 2px 15px #fff85e;
-  z-index: 999;
+nav{
+    width: 80%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px #ad966d;
+    z-index: 999;
 }
 
 
