@@ -39,16 +39,10 @@ nav {
   background: rgb(0, 0, 0);
   border-radius: 10px;
   z-index: 999;
-  
-}
-nav::after {
-  content: "";
-  position: absolute;
-  inset: 0; /* match the nav size */
-  transform: scale(1.1); /* make the “shadow” extend beyond the edges */
-  background: url('soft_edge_gradient.png') center/cover no-repeat;
-  z-index: -1;
-  pointer-events: none;
+  filter: drop-shadow(0 0 20px #ff3131)
+          drop-shadow(0 0 40px #fff85e)
+          drop-shadow(0 0 60px #bdff5d)
+          drop-shadow(0 0 80px #00d0ff);
 }
 
 nav ul {
