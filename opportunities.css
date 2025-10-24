@@ -57,7 +57,7 @@ body {
 }
 
 .opportunities-list .position .apply-link:hover {
-  color: #bdff5d;
+  color: #32C8BA;
   text-decoration: underline;
 }
 
@@ -65,49 +65,106 @@ body {
   color: #ad966d;
 }
 
-nav{
-    width: 80%;
-    min-height: 60px;
+nav {
+    width: 100%;
+    min-height: 110px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     background: rgb(0, 0, 0);
-    border-radius: 10px;
-    z-index: 999;
+    border-radius: 0;
     box-shadow: 0px 2px 15px #ad966d;
+    z-index: 999;
+    padding: 0 3%; /* smaller padding for better centering */
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* prevent it from compressing */
+}
 
+.nav-logo img {
+    height: 90px;
+    width: auto;
+}
+
+@media (max-width: 1000px) {
+    .nav-logo img {
+        height: 70px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-logo img {
+        height: 60px;
+    }
+}
+
+/* Center the nav links in available space */
 nav ul {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%; /* Ensure the ul takes full width */
-}
-nav ul li{
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
     list-style: none;
-    margin: 10px 20px;
-    flex-grow: 1;
-    text-align: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
 }
-nav ul li a{
+
+@media (max-width: 800px) {
+    nav ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 10px;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
+    transition: font-size 0.3s ease;
 }
 
-nav ul li a:hover{
-  color: #ad966d;
-  text-decoration: none;
+@media (max-width: 1000px) {
+    nav ul li a {
+        font-size: 20px;
+    }
 }
 
-nav ul li a::after{
+@media (max-width: 800px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -117,10 +174,10 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-
 
 .close {
   display: none;
