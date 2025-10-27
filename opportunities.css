@@ -164,6 +164,10 @@ nav ul li a {
     }
 }
 
+nav ul li a:hover {
+    color: #ad966d;
+}
+
 nav ul li a::after {
     content: '';
     width: 0;
