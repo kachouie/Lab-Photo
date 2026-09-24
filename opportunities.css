@@ -234,6 +234,7 @@ nav ul li a:hover::after {
     position: fixed;
     top: 0;
     right: -200px; /* Start off-screen */
+    margin-right: 0;
     width: 200px;
     height: 100%;
     flex-direction: column;
