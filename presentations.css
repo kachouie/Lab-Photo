@@ -323,6 +323,7 @@ nav ul li a:hover::after {
       position: fixed;
       top: 0;
       right: -200px;
+      margin-right: 0;
       width: 200px;
       padding-top: 50px;
       z-index: 2;

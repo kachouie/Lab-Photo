@@ -359,6 +359,7 @@ nav .fas {
     position: fixed;
     top: 0;
     right: -200px;
+    margin-right: 0;
     width: 200px;
     padding-top: 50px;
     z-index: 2;
@@ -423,4 +424,47 @@ nav .fas {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* ponytail: below 768px the member card's flex row cannot fit a fixed 180px
+   photo plus 60px padding plus text into a ~390px screen, so names were
+   clipped mid-word and the social icons fell off the right edge. Stack the
+   photo above the text instead, and give the page back the width the 80%
+   container was throwing away. Text stays left-aligned throughout so the
+   span::after underline (left: 0) still lines up under the role. */
+@media (max-width: 768px) {
+  /* 80% of a 390px screen leaves only 312px, and the nested padding cuts the
+     card's text to ~250px. Widen the gutters back out. */
+  .main-container {
+    width: 92%;
+  }
+  /* Fixed 50px right margins wrapped the seven tab names into ragged rows.
+     A flex gap spaces them evenly however they wrap. */
+  .tab-titles {
+    gap: 14px 24px;
+  }
+  .tab-links {
+    margin-right: 0;
+    font-size: 16px;
+  }
+  .team .member {
+    flex-direction: column;
+    padding: 20px;
+  }
+  /* Photo spans the card instead of sitting centred above left-aligned text,
+     which read as two different alignments stacked on each other. Keeps the
+     desktop box's 180:250 ratio so object-fit crops exactly as much as it
+     always did -- a square box would cut ~25% more off the top and bottom of
+     a portrait. */
+  .team .member .teampic {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 180 / 250;
+  }
+  .team .member .member-info {
+    padding-left: 0;
+    padding-top: 18px;
+    width: 100%;
+  }
 }
