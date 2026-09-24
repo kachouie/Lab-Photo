@@ -412,3 +412,15 @@ nav .fas {
     font-size: 14px;
   }
 }
+
+/* ponytail: the three members just moved into Alumni still carry their full
+   bios, which blow the card to ~869px and stretch their row partner (cards are
+   height:100%). Clamp to 3 lines so the grid stays uniform. The short
+   "<degree> <year>" entries are 1 line, so they are unaffected.
+   Delete this rule once those bios are replaced with short lines. */
+#alumni .member-info p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
