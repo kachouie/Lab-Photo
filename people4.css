@@ -424,3 +424,28 @@ nav .fas {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* ponytail: below 768px the member card's flex row cannot fit a fixed 180px
+   photo plus 60px padding plus text into a ~390px screen, so names were
+   clipped mid-word and the social icons fell off the right edge. Stack the
+   photo above the text instead. Text stays left-aligned so the span::after
+   underline (left: 0) still lines up. Photo is centred with margin auto
+   rather than align-items, because Bootstrap's .align-items-start on the
+   element is !important. */
+@media (max-width: 768px) {
+  .team .member {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .team .member .teampic {
+    width: 100%;
+    max-width: 240px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  .team .member .member-info {
+    padding-left: 0;
+    padding-top: 18px;
+    width: 100%;
+  }
+}
