@@ -90,6 +90,13 @@ nav {
     flex-shrink: 0; /* prevent it from compressing */
 }
 
+/* ponytail: the logo is wrapped in a link to the home page. .nav-logo is a
+   flex row, so an inline <a> would become the flex item and carry an inline
+   descender, nudging the logo up ~2px. Making the link a flex box keeps its
+   height exactly the image's, so the nav looks unchanged. */
+.nav-logo a {
+    display: flex;
+}
 .nav-logo img {
     height: 90px;
     width: auto;
