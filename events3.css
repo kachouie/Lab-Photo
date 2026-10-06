@@ -53,6 +53,13 @@ nav {
     flex-shrink: 0; /* prevent it from compressing */
 }
 
+/* ponytail: the logo is wrapped in a link to the home page. .nav-logo is a
+   flex row, so an inline <a> would become the flex item and carry an inline
+   descender, nudging the logo up ~2px. Making the link a flex box keeps its
+   height exactly the image's, so the nav looks unchanged. */
+.nav-logo a {
+    display: flex;
+}
 .nav-logo img {
     height: 90px;
     width: auto;
@@ -368,5 +375,44 @@ nav .fas {
   }
   .copyright {
     font-size: 14px;
+  }
+}
+
+/* ponytail: the galleries appended plain <img> into a block container, so the
+   photos ran together with no gutters, and `.event img` forced every one into
+   a 320x175 box with the default object-fit: fill -- a 1920x1440 photo came
+   out visibly squashed. Lay them out as a responsive grid and crop to fill
+   instead of distorting. These rules come after `.event img`, which they
+   override on source order (same specificity). */
+[id^="photo-gallery-"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+[id^="photo-gallery-"] img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* A 1.2x hover on a tight grid overlapped the neighbours. Keep the cue, lift
+   the hovered tile above its siblings instead of covering them. */
+[id^="photo-gallery-"] img:hover {
+  transform: scale(1.04);
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  [id^="photo-gallery-"] {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  [id^="photo-gallery-"] img {
+    height: 140px;
   }
 }
